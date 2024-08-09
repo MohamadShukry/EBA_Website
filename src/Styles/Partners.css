@@ -1,0 +1,28 @@
+.pa-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pa-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .pa-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .pa-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .pa-column img {
+    width: 100%;
+    height: auto;
+  }
+  

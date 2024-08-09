@@ -1,0 +1,80 @@
+.team-section {
+  padding: 32px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.team-title-content {
+  margin-bottom: 64px;
+}
+
+.team-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  position: relative;
+}
+
+.team-title::after {
+  content: '';
+  display: block;
+  width: 75%;
+  height: 4px;
+  background-color: #178BFF; /* Accent color for underline */
+  border-radius: 8px;
+  margin: 16px auto 0;
+}
+
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.team-card-body {
+  padding: 20px;
+}
+
+.card-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card-info {
+  margin-left: 15px;
+}
+
+.card-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-email {
+  color: #6c757d;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 700px) {
+  .team-section {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .team-title {
+    font-size: 32px;
+  }
+
+  .card-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-info {
+    margin-left: 10px;
+  }
+}

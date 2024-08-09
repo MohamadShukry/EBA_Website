@@ -1,0 +1,84 @@
+
+
+.parent-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+  /* margin-top: 10px; */
+  position: relative; /* Ensure it respects its natural position */
+  z-index: 999; /* Ensure it's above the hero section and below the navbar */
+  padding-top: 80px; /* Adjust according to your fixed navbar's height */
+}
+
+.info-section {
+  padding: 20px;
+}
+
+.info-title-content {
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-cards {
+  width: calc(25% - 20px); /* Adjust for margins and gutters */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px; /* Adjust margin as needed */
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.info-cards {
+  width: calc(25% - 20px); /* Adjust for margins and gutters */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px; /* Adjust margin as needed */
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  cursor: pointer; /* Optional: Change cursor to pointer on hover */
+}
+
+.info-cards:hover {
+  background: linear-gradient(45deg, rgba(87, 236, 206, 0.8), rgb(0, 191, 255) 100%);
+  color: #fff; /* Optional: Change text color on hover */
+}
+
+
+@media (max-width: 992px) {
+  .info-cards {
+    width: calc(33.33% - 20px); /* Adjust for margins and gutters */
+  }
+}
+
+@media (max-width: 768px) {
+  .info-cards {
+    width: calc(50% - 20px); /* Adjust for margins and gutters */
+  }
+}
+
+@media (max-width: 576px) {
+  .info-cards {
+    width: calc(100% - 20px); /* Adjust for margins and gutters */
+  }
+}

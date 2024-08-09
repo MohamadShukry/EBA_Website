@@ -1,0 +1,96 @@
+.documents-container {
+  padding: 32px;
+  margin: 0 auto; /* Center align the container */
+  text-align: center;
+  
+  width: 80%; /* Set container width to 80% of the viewport */
+}
+
+.doc-title-content {
+  margin-bottom: 64px; /* Adjust margin as needed */
+}
+
+.doc-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  position: relative;
+}
+
+.doc-title > span {
+  position: relative;
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: center; /* Center align child elements */
+  align-items: stretch; /* Ensure items stretch vertically */
+  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+}
+
+.col-lg-3 {
+  flex: 0 0 25%; /* 25% width for lg screens */
+  max-width: 25%; /* Ensure max width for larger screens */
+  margin-bottom: 30px; /* Adjust margin as needed */
+  position: relative; /* Ensure positioning context */
+  text-align: center; /* Center align text */
+}
+
+.col-md-6 {
+  flex: 0 0 50%; /* 50% width for md screens */
+  max-width: 50%; /* Ensure max width for medium screens */
+}
+
+.mb-5,
+.mb-md-0 {
+  margin-bottom: 1.5rem !important; /* Adjust margin as needed */
+}
+
+.text-primary {
+  color: #007bff !important; /* Adjust color as needed */
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important; /* Adjust margin as needed */
+}
+
+.vr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Position in the middle of the column */
+  transform: translateX(-50%); /* Adjust for center alignment */
+  width: 2px;
+  background-color: #ccc;
+}
+
+.vr-blurry {
+  filter: blur(2px); /* Example of using CSS filter */
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-md-block {
+  display: block !important;
+}
+
+@media screen and (max-width: 992px) {
+  .col-lg-3,
+  .col-md-6 {
+    flex: 0 0 100%; /* 100% width for smaller screens */
+    max-width: 100%; /* Ensure max width for smaller screens */
+  }
+}

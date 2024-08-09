@@ -1,0 +1,13 @@
+/* Home.css */
+.home-section {
+    background-image: url('../Assets/bgimage.jpg'); /* Update with the correct path */
+    
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optionally make the background fixed */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+    padding: 0; /* Adjust padding as needed */
+    margin: 0; /* Adjust margin as needed */
+  }
+  
